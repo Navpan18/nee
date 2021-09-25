@@ -3,11 +3,9 @@ import axios from "./axios";
 import "./Row.css";
 import Youtube from "react-youtube";
 import movieTrailer from "movie-trailer";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 
-const baseurl = "http://image.tmdb.org/t/p/original";
+const baseurl = "http://image.tmdb.org/t/p/w500";
 
 function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
