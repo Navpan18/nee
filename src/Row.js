@@ -11,7 +11,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
   const [loaded, setLoaded] = useState(false);
-  const [loader, setLoader] = useState(true);
   useEffect(() => {
     //you can't use async function inside use effect so you to make an internal function and call it
     async function fetchData() {
